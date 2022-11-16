@@ -59,8 +59,7 @@ namespace StarWars.API
             // UI level auth (Cookie)
             services.AddMicrosoftIdentityWebAppAuthentication(
                         Configuration, 
-                        "AzureB2C_Demo_UI", 
-                        OpenIdConnectDefaults.AuthenticationScheme)
+                        "AzureB2C_Demo_UI")
                     .EnableTokenAcquisitionToCallDownstreamApi()
                     .AddInMemoryTokenCaches();
 
